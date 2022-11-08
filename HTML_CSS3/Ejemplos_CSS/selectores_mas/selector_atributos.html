@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector descendiente en cascada</title>
+    <style>
+        h2[class] {
+            color:red;
+        }
+        p[id="parrafo"] {
+            color:blue;
+        }
+        a[class~="enlace"] {
+            color:green;
+        }
+        p[class|="ult"] {
+            color: #ff00ff;
+        }
+        a[href ^="https://"] {
+            color: #00ffff;
+        }
+        a[href$=".com"] {
+            color: #630;
+        }
+        a[href*="miau"] {
+            color: #ffff00;
+        }
+        a[href*="muu" i] {
+            color: #70f307;
+        }
+    </style>
+</head>
+<body>
+    <div id="cuerpo">
+        <h2 class="cabecera">Cabecera h2</h2>
+        <h2>Otra cabecera</h2>
+        <p id="parrafo">Párrafo con id</p>
+        <p>Párrafo sin id</p>
+        <p><a class="enlace enlace2" href="http://www.olimpiadasrurales.es">Enlace a página no segura</a></p>
+        <p class="ult-imo">Otro párrafo</p>
+        <p><a href="https://www.guauguau.es">Enlace a página segura perro</a></p>
+        <p><a href="http://www.kikirikiki.com">Enlace a página no segura gallo</a></p>
+        <p><a href="http://www.miaumiau.es">Enlace a página no segura gato</a></p>
+        <p><a href="http://www.MuuuMuuu.es">Enlace a página no segura vaca</a></p>
+    </div>
+</body>
+</html>

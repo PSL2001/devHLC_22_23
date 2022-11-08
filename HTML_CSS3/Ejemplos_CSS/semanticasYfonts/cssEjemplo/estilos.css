@@ -1,0 +1,36 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vw;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 60px;
+    font-style: oblique;
+    font-weight: 900;
+    text-align: center;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3vw;
+}
+#primero{
+    font-family: 'Anton', sans-serif;
+}
+p{
+    font-family: 'Indie Flower', cursive;
+}
+section{
+    background-color:#F0E68C;
+    border-style: dashed;
+    border-color: chartreuse;
+    margin: 10%;
+    padding: 30px;
+}
+.icoTamano{
+    font-size: 60px;
+    color: crimson;
+}
+.material-icons.md24{
+    font-size: 80px;
+    color: darkmagenta;
+}

@@ -1,0 +1,67 @@
+body {
+	color: gray; background-color: white; 
+     }
+
+a	{
+		color: red;
+		font-size: 16px;
+		text-decoration: underline;
+	}
+
+/* Este es como el de antes */
+A:link	{
+		color: red;
+		font-size: 16px;
+		text-decoration: underline;
+	}
+
+/* a:hover se aplica a enlaces sobre los que ponemos el ratón */
+A:hover	{
+		color: red;
+		font-size: 16px;
+		font-style: bold;
+		text-decoration: none;
+	}
+
+/* a:active se aplica a enlaces activos */
+A:active	{
+		color: blue;
+		font-size: 16pt;
+		font-style: bold;
+	}
+/* a:active se aplica a enlaces ya visitados */
+A:visited	{
+		color: gray;
+		font-size: 16pt;
+		font-style: bold;
+	}
+
+/* Este es como el de antes */
+A:focus:link	{
+		color: red;
+		background: black;
+		font-size: 45pt;
+		text-decoration: none;
+	}
+
+H1, H2   {
+	color: red   
+     }
+
+/* Un estilo de borde especial que aplicaremos a la tabla */
+.bordeschulos  {	
+			border-style: dashed; 
+			border: 4;
+     		   }
+
+#parrafo_especial  {	
+			color: green; 
+			font-size: 14pt;
+			font-style: italic;
+     		   }
+
+#definicion  {	
+			color: black; 
+			font-size: 16pt;
+			font-style: bold;
+     		   }

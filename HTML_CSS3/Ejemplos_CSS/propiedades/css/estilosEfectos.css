@@ -1,0 +1,16 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    
+}
+
+h1{
+    font-size: 4vw;
+}
+h2{
+    font-size: 3vw;
+}

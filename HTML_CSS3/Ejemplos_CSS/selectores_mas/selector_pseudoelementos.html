@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector descendiente en cascada</title>
+    <style>
+        p:first-line {
+            font-size:1.5em;
+        }
+        h1:first-letter {
+            font-size: 1.5em;
+            color: red;
+        }
+        h1:before {
+            content: "Apartado - ";
+        }
+        h1:after {
+            content:" - ";
+            }
+        h2:before{
+            content:url(icono.png);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cabecera h1</h1>
+        <h2>Cabecera h2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, non labore voluptatibus perferendis tempora modi autem ipsum minima exercitationem, ut obcaecati quasi nihil molestias iusto dolores maxime esse! Ducimus, soluta.
+        Veritatis beatae, ullam labore quia nostrum eum cum. Asperiores veritatis, repellendus ipsam explicabo numquam omnis ut dolorem, quaerat vero ducimus illo minus quam cumque illum quo commodi unde eaque repudiandae?
+        Vero eius adipisci quia alias distinctio rem modi incidunt quam soluta harum et aperiam dolores minima beatae officia quisquam, sunt quas corrupti labore consequatur magni ratione voluptatibus! Iste, enim quae?</p>
+    </div>
+</body>
+</html>

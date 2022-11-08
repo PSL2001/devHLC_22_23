@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector descendiente en cascada</title>
+    <style>
+        /*Elemento 7*/
+        /*p:nth-child(7){
+            color:red;
+        }*/
+        /*Cada impares*/
+        /*p:nth-child(odd){
+            color:red;
+        }*/
+        /*Cada pares*/
+        /*p:nth-child(even){
+            color:red;
+        }*/
+        /*Cada cuatro elementos*/
+        /*p:nth-child(4n){
+            color:red;
+        }*/
+        /*Cada cuatro elementos a partir de 2*/
+        /*p:nth-child(4n+2){
+            color:red;
+        }*/
+        /*Los cuatro primeros elementos*/
+        /*p:nth-child(-n+4){
+            color:red;
+        }*/
+        /*Cada elemento = que selector p*/
+        /*p:nth-child(n){
+            color:red;
+        }*/
+        /*Primer elemento = first-child*/
+        /*p:nth-child(1){
+            color:red;
+        }*/
+        
+/*======================================================================*/
+/*============== cont nth-last-child igual pero contando desde el final */
+/*======================================================================*/
+
+        /*Elemento 7 desde el final*/
+        /*p:nth-last-child(7){
+            color:red;
+        }*/
+        /*Cada cuatro elementos desde el final*/
+        /*p:nth-last-child(4n){
+            color:red;
+        }*/
+        /*Cada cuatro elementos a partir de 2 desde el final*/
+        /*p:nth-last-child(4n+2){
+            color:red;
+        }*/
+        /*Los cuatro últimos elementos*/
+        /*p:nth-last-child(-n+4){
+            color:red;
+        }*/
+
+/*======================================================================================*/
+/*============== cont nth-of-type y nth-last-of-type igual pero ========================*/
+/*==============contando sólo elementos del mismo tipo el final ========================*/
+/*======================================================================================*/
+
+        /*Cada cuatro párrafos*/
+        /*p:nth-of-type(4n){
+            color:red;
+        }*/
+
+    </style>
+</head>
+<body>
+    <main>
+    <article>
+        <h1>Hola</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <h1>Hola</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>
+        <h1>Hola</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>    
+    </article>
+    </main>
+</body>
+</html>

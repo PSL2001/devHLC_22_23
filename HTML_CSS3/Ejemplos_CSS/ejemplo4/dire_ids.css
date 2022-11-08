@@ -1,0 +1,23 @@
+/* Hoja de estilos básica 
+*/
+
+body {
+	color: gray; background-color: white; 
+     }
+
+h1, h2   {
+	color: red;   
+     }
+
+/* Para los ID se usa la # */
+#parrafo_especial  {	
+			color: green; 
+			font-size: 14px;
+			font-style: italic;
+     		   }
+
+#definicion  {	
+			color: black; 
+			font-size: 16px;
+			font-style: bold;
+     		   }

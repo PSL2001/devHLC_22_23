@@ -1,0 +1,22 @@
+/* Hoja de estilos básica 
+*/
+
+body {
+	color: gray; background-color: white; 
+     }
+
+/* Un mismo estilo puede servir para dos o más etiquetas */
+h1, h2   {
+	color: red   
+     }
+
+.parrafo_especial  {	
+			color: green; 
+			font-size: 10pt;
+			font-style: italic;
+     		}
+
+.parrafo_azul  {	
+			color: blue; 
+			font-size: 16pt; 
+     	     }

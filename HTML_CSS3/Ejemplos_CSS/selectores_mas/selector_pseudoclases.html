@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector descendiente en cascada</title>
+    <style>
+        h1:first-child{
+            color:red;
+        }
+        p:last-child{
+            color:blue;
+        }
+        p:first-of-type{
+            color:salmon;
+        }
+        h2:last-of-type{
+            color: #f0f;
+        }
+        em:only-child{
+            color: yellowgreen;
+        }
+        strong:only-of-type{
+            color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <article>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>
+    </article>
+    <article>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt tempora nihil quos facere quam optio eum quidem! Rerum temporibus iure alias facere rem adipisci, quia pariatur fugit vero voluptatibus?</p>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi iusto aperiam aspernatur, repellendus voluptas dignissimos? Asperiores dicta explicabo vero cum non pariatur atque? Repellendus ducimus unde eos eveniet. Provident, voluptatum!</p>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <p>Lorem ipsum dolor sit amet <em>estoy solito</em> consectetur adipisicing elit. Eos animi esse, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum dolor sit amet <em>estoy solito</em> consectetur adipisicing elit. Eos <em>animi esse</em>, recusandae repudiandae illo praesentium optio explicabo quos sequi maxime magnam quod quisquam est, quo quam quaerat corrupti, impedit earum!</p>
+        <p>Lorem ipsum, dolor sit amet <strong>consectetur</strong> adipisicing elit. Repellendus aut asperiores eos laudantium atque reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum, dolor sit amet <strong>consectetur</strong> adipisicing elit. Repellendus aut <strong>eos laudantium atque</strong>  reprehenderit dolore veritatis, in nihil quasi assumenda alias nulla corrupti dolores optio omnis, quaerat soluta? Quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolor doloremque labore ad alias, voluptatem debitis sunt similique eius dicta. Amet distinctio aut animi alias illum nemo a quibusdam ipsum!</p>
+    </article>
+    </main>
+</body>
+</html>

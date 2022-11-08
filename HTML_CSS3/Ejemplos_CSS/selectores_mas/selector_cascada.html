@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector descendiente en cascada</title>
+    <style>
+        #estilo1 {color:red;}
+        #estilo2 { font-family:'Times New Roman', Times, serif;
+                    text-align:center;
+                    color: blue;
+                    background-color:#bbbbbb;
+                    }
+    </style>
+</head>
+<body>
+    <div id="estilo1">
+        <p>Este párrafo tomaría los valores del selector estilo1</p>
+        <div>
+            <p id="estilo2">Aquí no</p>
+            <p>Aquí si</p>
+        </div>
+    </div>
+</body>
+</html>
