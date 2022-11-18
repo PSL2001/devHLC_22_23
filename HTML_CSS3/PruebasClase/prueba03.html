@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicios Básicos sobre HTML5 y CSS3">
+    <meta name="keywords" content="html5, css3">
+    <meta name="author" content="Pablo Sánchez López">
+    <title>PrácticaXY Pablo Sánchez López</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Estructura Básica Semántica - Pablo Sánchez López -->
+    <header></header>
+    <main>
+        <table>
+            <caption>Titulo</caption>
+            <thead>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 2</th>
+                    <th>Dato 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>J</td>
+                </tr>
+                <tr>
+                    <td colspan="2">I</td>
+                    <td>J</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Tabla de Datos</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <address>
+            <ul>
+                <li>Pablo Sánchez López</li>
+                <li>DAM - HLC</li>
+                <li>HTML5 Y CSS3</li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicios Básicos sobre HTML5 y CSS3">
+    <meta name="keywords" content="html5, css3">
+    <meta name="author" content="Pablo Sánchez López">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Práctica03 Pablo Sánchez López</title>
+</head>
+<body>
+    <!--Estructura Básica Semántica - Pablo Sánchez López -->
+    <header>
+        <h1>Horario de Clase</h1>
+    </header>
+    <main>
+        <table>
+            <caption>2º DAM</caption>
+            <thead>
+                <th class="generico"></th>
+                <th class="generico">Lunes</th>
+                <th class="generico">Martes</th>
+                <th class="generico">Miercoles</th>
+                <th class="generico">Jueves</th>
+                <th class="generico">Viernes</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="generico">8:15 - 9:15</td>
+                    <td rowspan="2" class="deint">DEINT</td>
+                    <td rowspan="2" class="deint">DEINT</td>
+                    <td rowspan="2" class="deint">DEINT</td>
+                    <td rowspan="2" class="sgemp">SGEMP</td>
+                    <td class="hlc">HLC</td>
+                </tr>
+                <tr>
+                    <td class="generico">9:15 - 10:15</td>
+                    <td class="acdat">ACDAT</td>
+                </tr>
+                <tr>
+                    <td class="generico">10:15 - 11:15</td>
+                    <td class="sgemp">SGEMP</td>
+                    <td class="hlc">HLC</td>
+                    <td class="acdat">ACDAT</td>
+                    <td class="acdat">ACDAT</td>
+                    <td class="einem">EINEM</td>
+                </tr>
+                <tr>
+                   <td class="generico">11:15 - 11:45</td>
+                   <td colspan="5" class="generico">RECREO</td>
+                </tr>
+                <tr>
+                    <td class="generico">11:45 - 12:45</td>
+                    <td class="sgemp">SGEMP</td>
+                    <td class="hlc">HLC</td>
+                    <td class="acdat">ACDAT</td>
+                    <td class="acdat">ACDAT</td>
+                    <td rowspan="3" class="einem">EINEM</td>
+                </tr>
+                <tr>
+                    <td class="generico">12:45 - 13:45</td>
+                    <td rowspan="2" class="pmdmo">PMDMO</td>
+                    <td rowspan="2" class="pmdmo">PMDMO</td>
+                    <td rowspan="2" class="pspro">PSPRO</td>
+                    <td class="deint">DEINT</td>
+                </tr>
+                <tr>
+                    <td class="generico">13:45 - 14:45</td>
+                    <td class="pspro">PSPRO</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="generico" colspan="6">Horario de Clase 2º DAM Curso 2022 - 2023</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <address>
+            <ul>
+                <li>Pablo Sánchez López</li>
+                <li>DAM - HLC</li>
+                <li>HTML5 Y CSS3</li>
+            </ul>
+        </address>
+    </footer>
+</body>
+</html>
