@@ -1,0 +1,31 @@
+.primario {
+    background-color:tomato;
+}
+.secundario {
+    background-color:orange ;
+}
+.terciario {
+    background-color: steelblue;
+}
+.extra {
+    background-color: aquamarine;
+}
+
+fieldset legend {
+    background-color: white;
+    border: solid black 1px;
+    padding: 0px 5px
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}

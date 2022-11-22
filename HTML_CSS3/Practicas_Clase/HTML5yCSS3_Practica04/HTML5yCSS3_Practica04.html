@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicios Básicos sobre HTML5 y CSS3">
+    <meta name="keywords" content="html5, css3">
+    <meta name="author" content="Pablo Sánchez López">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Práctica04 Pablo Sánchez López</title>
+</head>
+<body>
+    <!--Estructura Básica Semántica de Formularios - Pablo Sánchez López -->
+    <header>
+        <h1>Hoja de Inscripcion en los Ciclos Formativos de Grado Superior</h1>
+    </header>
+    <main>
+        <form action="" method="post" autocomplete="on">
+            <fieldset class="primario">
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos">
+                    <label for="dni">DNI:</label>
+                    <input type="text" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="Debes poner 8 números y una letra" required>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" name="fechaNacimiento">
+                </div>
+                <div>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="telefono" pattern="[0-9]{3}-[0-9]{9}" placeholder="034-600115203" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" autofocus required>
+                </div>
+                <div>
+                    <label for="localidad">Localidad:</label>
+                    <input type="text" name="localidad">
+                    <label for="provincia">Provincia:</label>
+                    <select name="provincia">
+                        <option value="Almería">Almería</option>
+                        <option value="Cádiz">Cádiz</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Granada">Granada</option>
+                        <option value="Huelva">Huelva</option>
+                        <option value="Jaen">Jaen</option>
+                        <option value="Málaga">Málaga</option>
+                        <option value="Sevilla">Sevilla</option>
+                    </select>
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" name="direccion">
+                    <label for="codPostal">Codigo Postal:</label>
+                    <input type="text" name="codPostal">
+                </div>
+            </fieldset>
+            <fieldset class="secundario">
+                <legend>Forma de Acceso</legend>
+                <div>
+                    <ol style="list-style:none ;">
+                        <li>
+                            <input type="radio" name="rg1">
+                            <label for="rg1">Directo</label>
+                            <ol style="list-style:none ;">
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Bachillerato o equivalente a efectos academicos</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Técnico de FP (CFGM)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Tecnico Superior de FP (CFGS) o equivalente a efectos academicos. Especifique denominacion de la titulacion</label>
+                                    <input type="text" name="rg2">
+                                </li>
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Titulacion Universitaria Oficial. Especifique denominacion de la titulacion</label>
+                                    <input type="text" name="rg2">
+                                </li>
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Otros (Especifique):</label>
+                                    <input type="text" name="rg2">
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <input type="radio" name="rg1">
+                            <label for="rg1">Prueba Libre</label>
+                            <ol style="list-style:none ;">
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Prueba de acceso a los ciclos formativos de grado medio</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rg2">
+                                    <label for="rg2">Prueba de acceso de universidad para mayores</label>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </fieldset>
+            <fieldset class="terciario">
+                <legend>Documentos Adjuntados</legend>
+                <div>
+                    <label for="fotoDni">Fotocopia DNI. Selecciona un fichero</label>
+                    <input type="file" name="fotoDni">
+                </div>
+                <div>
+                    <label for="cert">Certificado Academico. Selecciona un fichero</label>
+                    <input type="file" name="cert">
+                </div>
+                <div>
+                    <label for="otros">Otros Documentos. Selecciona un fichero</label>
+                    <input type="file" name="otros">
+                </div>
+            </fieldset>
+            <fieldset class="extra">
+                <legend>Otros Datos</legend>
+                <div>
+                    <textarea name="datos" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="fechaInscripcion">Fecha y hora de Inscripcion</label>
+                    <input type="datetime-local" name="fechaInscripcion">
+                </div>
+            </fieldset>
+            <button type="submit"><img src="./img/boton.png" alt="Boton de Enviar"></button>
+            <!-- Boton aqui -->
+        </form>
+    </main>
+    <footer>
+        <address>
+            <ul>
+                <li>Pablo Sánchez López</li>
+                <li>DAM - HLC</li>
+                <li>HTML5 Y CSS3</li>
+            </ul>
+        </address>
+    </footer>
+</body>
+</html>
