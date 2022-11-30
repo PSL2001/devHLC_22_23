@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,29 +10,47 @@
     <meta name="author" content="Pablo Sánchez López">
     <title>Práctica05 Pablo Sánchez López</title>
 </head>
+
 <body>
     <!--Estructura Básica Semántica - Pablo Sánchez López -->
     <header>
-        <section>
-            <figure>
-                <img src="./img/imagen1.jpg" alt="Girasoles">
-                <figcaption>Girasoles</figcaption>
-            </figure>
-        </section>
-        <section>
-            <a href="www.google.es">Ir a Google</a>
-            <a href="https://openwebinars.net/">Ir a openwebinars</a>
-            <a href="www.youtube.com">Ir a youtube</a>
-        </section>
+        <figure>
+            <img src="./img/imagen1.jpg" alt="Girasoles">
+            <figcaption>Girasoles</figcaption>
+        </figure>
+        <a href="www.google.es">Ir a Google</a>
+        <a href="https://openwebinars.net/">Ir a openwebinars</a>
+        <a href="www.youtube.com">Ir a youtube</a>
     </header>
     <main>
         <section>
-            <video src=""></video>
+            <article>
+                <video width="25%" height="25%" controls>
+                    <source src="./video/video1.mp4" type="video/mp4">
+                    <source src="./video/video1.ogg" type="video/ogg">
+                    <source src="./video/video1.webm" type="video/webm">
+                    Tu navegador no soporta esta etiqueta
+                </video>
+            </article>
+            <article>
+                <video width="25%" height="25%" autoplay muted loop>
+                    <source src="./video/video2.mp4" type="video/mp4">
+                    <source src="./video/video2.ogg" type="video/ogg">
+                    <source src="./video/video2.webm" type="video/webm">
+                    Tu navegador no soporta esta etiqueta
+                </video>
+            </article>
+            <article>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IRS5lNpj1l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
         </section>
         <section>
 
         </section>
     </main>
+    <aside>
+        <iframe src="../HTML5yCSS3_Practica01/HTML5yCSS3_Practica01.html" frameborder="0"></iframe>
+    </aside>
     <footer>
         <address>
             <ul>
@@ -42,4 +61,5 @@
         </address>
     </footer>
 </body>
+
 </html>
