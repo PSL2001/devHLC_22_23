@@ -25,6 +25,7 @@
     <main>
         <section>
             <article>
+                <!-- Controls es para poder ver los controles del video -->
                 <video width="25%" height="25%" controls>
                     <source src="./video/video1.mp4" type="video/mp4">
                     <source src="./video/video1.ogg" type="video/ogg">
@@ -33,6 +34,7 @@
                 </video>
             </article>
             <article>
+                <!-- Autoplay inicia el video automaticamente, loop hace que no pare el video y muted le quita el sonido -->
                 <video width="25%" height="25%" autoplay muted loop>
                     <source src="./video/video2.mp4" type="video/mp4">
                     <source src="./video/video2.ogg" type="video/ogg">
@@ -45,11 +47,24 @@
             </article>
         </section>
         <section>
-            <!-- Audios van aqui -->
+            <!-- Audios van aqui; Controls añade los controles -->
+            <audio controls>
+                <source src="audio/analysis.wav" type="audio/wav">
+                <source src="audio/analysis.mp3" type="audio/mp3">
+                Tu navegador no soporta esta etiqueta (audio)
+            </audio>
+            <!-- Autoplay inicia el video automaticamente, loop hace que no pare el video y muted le quita el sonido, hay que añadir controls a este tambien por que si no es invisible -->
+            <audio autoplay controls loop muted>
+                <source src="audio/beverage.wav" type="audio/wav"/>
+                <source src="audio/beverage.mp3" type="audio/mp3"/>
+                Tu navegador no soporta esta etiqueta (audio)
+            </audio>
         </section>
     </main>
     <aside>
-        <iframe src="../HTML5yCSS3_Practica01/HTML5yCSS3_Practica01.html" frameborder="0"></iframe>
+        <section>
+            <iframe src="../HTML5yCSS3_Practica01/HTML5yCSS3_Practica01.html" frameborder="0"></iframe>
+        </section>
     </aside>
     <footer>
         <address>
