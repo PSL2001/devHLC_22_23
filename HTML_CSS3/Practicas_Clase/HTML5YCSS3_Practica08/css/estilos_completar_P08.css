@@ -28,9 +28,19 @@ tfoot td {
     text-align: center;
 }
 
-/* Los enlaces iran alineados al centro */
-a {
+/* Estilo centrado de los enlaces */
+#enlace {
     text-align: center;
+}
+
+/* Estilo de los botones */
+input[type="submit"] {
+    background-color: #4c93af;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 /* Utilizando únicamente pseudoselectores da color de fondo verde a las casillas que contienen horas */
@@ -41,7 +51,7 @@ tbody td:first-child {
 
 /* Utilizando únicamente pseudoselectores da color de fondo amarillo a la celda de recreo */
 tr:nth-child(4) td:nth-child(2) {
-    background-color: yellow;
+    background-color: rgb(0, 255, 149);
     text-align: center;
 }
 
@@ -61,12 +71,12 @@ a {
 
 /* Ahora hacemos que los visitados se muestren en rojo */
 a:visited {
-    color: red;
+    color: rgb(0, 68, 255);
 }
 
 /* Ahora hacemos que los no visitados se muestren en verde */
 a:link {
-    color: green;
+    color: rgb(236, 196, 14);
 }
 
 /* Utilizando pseudoselectores hacer que cuando pasemos el ratón sobre la columna del viernes
