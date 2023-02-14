@@ -5,3 +5,7 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+setInterval(() => {
+    let number = Math.floor(Math.random() * 36)
+    document.getElementById('numero').innerHTML = number
+}, 1000)
