@@ -1,0 +1,15 @@
+{
+  "name": "proyecto01",
+  "version": "1.0.0",
+  "description": "Proyecto01 con electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Sánchez López",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^23.0.0"
+  }
+}
