@@ -1,8 +1,8 @@
 // Modules to control application life and create native browser window
-const { app, BrowserWindow, dialog } = require('electron')
+const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
-function createWindow() {
+function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -17,24 +17,7 @@ function createWindow() {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
-  // Muestra una ventana de dialogo que nos pregunta si queremos salir de la aplicacion
-  mainWindow.on('close', (e) => {
-    const choice = dialog.showMessageBoxSync(mainWindow, {
-      type: 'question',
-      buttons: ['Si', 'No'],
-      title: 'Confirmacion',
-      message: '¿Esta seguro que desea salir?'
-    });
-    if (choice === 1) {
-      e.preventDefault();
-    }
-  });
-};
-// console.log("Despues de cerrar la aplicacion");
-// console.log(app.getPath('downloads'))
-// console.log(app.getPath('appData'))
-// console.log(app.getPath('logs'))
-
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
