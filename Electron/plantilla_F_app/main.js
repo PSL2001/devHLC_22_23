@@ -7,11 +7,14 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    minWidth: 300,
+    minHeight: 300,
     width: 800,
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    show : false
   })
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
@@ -46,39 +49,43 @@ function createWindow () {
     }
   }); */
   
+  //console.log(webContents)
 
 
 /* menu contextual del ratón */
-/* let contens = mainWindow.webContents
+let contens = mainWindow.webContents
 contens.on('context-menu', (e, a) => {
   console.log(a.mediaType)
-}) */
+  console.log(a.x);
+  console.log(a.y);
+  console.log(a.srcURL);
+}) 
 
   /* evitar efecto blink */
-  /* mainWindow.on('ready-to-show', () =>{
+   mainWindow.on('ready-to-show', () =>{
     mainWindow.show()
-  }) */
+  })
 
-  /* mainWindow.on('enter-full-screen', () =>{
-    setTimeout(() =>{
-      mainWindow.setFullScreen(false)
-    },1000)
-  })
-  mainWindow.on('leave-full-screen', () =>{
-    setTimeout(() =>{
-      mainWindow.setFullScreen(true)
-    },1000)
-  })
-  mainWindow.setFullScreen(true) */
+  // mainWindow.on('enter-full-screen', () =>{
+  //   setTimeout(() =>{
+  //     mainWindow.setFullScreen(false)
+  //   },1000)
+  // })
+  // mainWindow.on('leave-full-screen', () =>{
+  //   setTimeout(() =>{
+  //     mainWindow.setFullScreen(true)
+  //   },1000)
+  // })
+  // mainWindow.setFullScreen(true)
 
- /*  secondWindow = new BrowserWindow({
-    width: 500,
-    height: 400,
-    parent: mainWindow,
-    modal: true,
-    frame: false
-  })
-  secondWindow.loadFile('index2.html') */
+//  secondWindow = new BrowserWindow({
+//     width: 500,
+//     height: 400,
+//     parent: mainWindow,
+//     modal: true,
+//     frame: false
+//   })
+//   secondWindow.loadFile('index2.html')
 
   
   // Open the DevTools.
