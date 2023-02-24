@@ -30,21 +30,34 @@ function createWindow () {
   })
 
   // Recibe mensaje síncrono
-  /* ipcMain.on('elcanal', (event, arg) => {
+   ipcMain.on('elcanal', (event, arg) => {
     console.log(arg)
     event.returnValue =  'la respuesta desde main'
-  }) */
+  }) 
  
   // Recibe mensaje asíncrono
-  /* ipcMain.on('elcanalasync', (event, arg) => {
+  ipcMain.on('elcanalasync', (event, arg) => {
     console.log(arg)
     event.sender.send('canal_respuesta', 'la respuesta async desde main')
-  }) */
+  })
 
   // Envía mensaje asíncrono
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.webContents.send('elcanal', 'el mensaje desde el main')
   })
+
+
+  // // Respuesta a mensaje síncrono
+  // ipcMain.on('elcanal', (event, arg) => {
+  // console.log(arg)
+  // event.returnValue = 'la respuesta desde main'
+  // })
+  // Respuesta a mensaje asíncrono: envío de otro mensaje asíncrono
+  ipcMain.on('elcanalasync', (event, arg) => {
+  console.log(arg)
+  event.sender.send('canal_respuesta', 'la respuesta async desde main')
+  })
+  
 }
 
 // This method will be called when Electron has finished

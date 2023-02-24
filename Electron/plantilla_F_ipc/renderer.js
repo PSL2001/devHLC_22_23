@@ -1,21 +1,16 @@
 const {ipcRenderer} = require('electron')
+// Mensaje síncrono, devuelve la respuesta del proceso main
+// let r = ipcRenderer.sendSync('elcanal', 'mensaje desde renderer')
+// Mensaje asíncrono la respuesta hay que esperarla en un listener
+ipcRenderer.send('elcanalasync', 'mensaje async desde renderer')
 
-// Envía mensaje síncrono
-/* let r = ipcRenderer.sendSync('elcanal', 'mensaje desde renderer')
-console.log(r); */
-
-// Envía mensaje asíncrono
-/* ipcRenderer.send('elcanalasync', 'mensaje async desde renderer')
-
-console.log('hola')
+console.log('hola');
 
 ipcRenderer.on('canal_respuesta', (event, arg) => {
-   console.log(arg)
-}) */
+console.log(arg)
+})
 
-
-// Recibe mensaje asíncrono
+//Recibe mensaje asíncrono
 ipcRenderer.on('elcanal', (event, arg) => {
-    console.log(arg)
- })
- 
+console.log(arg)
+})
