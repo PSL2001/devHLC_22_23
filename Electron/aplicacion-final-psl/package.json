@@ -1,0 +1,22 @@
+{
+  "name": "aplicacion-final-psl",
+  "version": "1.0.0",
+  "description": "Aplicacion Final del modulo HLC basada en keepassx",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^22.1.0"
+  }
+}
