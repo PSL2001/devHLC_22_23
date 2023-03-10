@@ -2,6 +2,18 @@
 const {app, BrowserWindow, Menu} = require('electron')
 const path = require('path')
 
+//Funcion para crear la ventana modal de formulario
+function createFormModal(browserWindow, width, height, url) {
+  let winForm = new BrowserWindow({
+    width: width,
+    height: height,
+    frame: false,
+    parent: browserWindow,
+    modal: true,
+  })
+  winForm.loadURL(url)
+}
+
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -15,11 +27,14 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('renderer/index.html')
 
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
-
   let templateMenu = require('./templateMenu.js').templateMenu
   Menu.setApplicationMenu(Menu.buildFromTemplate(templateMenu))
+
+  let url = `file://${path.join(__dirname, 'renderer', 'form_add_keyregister.html')}`;
+  createFormModal(mainWindow, 400, 600, url)
+
+  // Open the DevTools.
+  // mainWindow.webContents.openDevTools()
 
 }
 
