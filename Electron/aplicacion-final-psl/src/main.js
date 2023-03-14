@@ -33,6 +33,12 @@ function createWindow () {
   let url = `file://${path.join(__dirname, 'renderer', 'form_add_keyregister.html')}`;
   createFormModal(mainWindow, 400, 600, url)
 
+  // let url2 = `file://${path.join(__dirname, 'renderer', 'form_create_filestorage.html')}`;
+  // createFormModal(mainWindow, 400, 600, url2)
+
+  // let url3 = `file://${path.join(__dirname, 'renderer', 'form_load_filestorage.html')}`;
+  // createFormModal(mainWindow, 400, 600, url3)
+
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
